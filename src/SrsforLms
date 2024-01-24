@@ -1,0 +1,287 @@
+Software Requirements Specification for Library Management System
+Table of Contents:
+1.0 Introduction
+1.1 Purpose
+1.2 Scope of Product
+1.3 Definitions, Acronyms, and Abbreviations
+1.4 References
+1.5 Overview
+2.0 General Description
+2.1 Product Perspective
+2.2 Product Functions
+2.3 User Characteristics
+2.4 General Constraints
+2.5 Assumptions and Dependencies
+3.0 Specific Requirements
+3.1 Functional Requirements
+3.1.1 User Interface
+3.1.1.1 Library user account manage system
+3.1.1.2 Book borrowing system
+3.1.1.3 Book recall system
+3.1.1.4 Search book record
+3.1.2 Data Entry
+3.1.2.1 Library user account manage system
+3.1.2.2 Book borrowing system
+3.1.2.3 Book recall system
+3.1.2.4 Search book record
+3.1.2.5 Update book database
+3.1.3 Report Generation
+3.2 Performance Requirements
+3.3 Design Constraints
+3.4 Security Requirements
+3.5 Reliability
+1.0 Introduction
+1.1 Purpose
+This is the Software Requirements Specification (SRS) for the Library Management System. The purpose of this document is to convey information
+about the application's requirements, both functional and non-functional, to the reader. This document provides (a) a description of the environment in
+which the application is expected to operate, (b) a definition of the application's capabilities, and (c) a specification of the application's functional and
+nonfunctional requirements.
+The document is intended to serve several groups of audiences:
+First, it is anticipated that the SRS will be used by the application designers. Designers will use the information recorded here as the basis for
+creating the application's design.
+Second, the client for the project, the library manager in our case, is expected to review this document. The SRS will serve to establish a basis
+for agreement between the client and development team about the functionality to be provided by the application.
+Third, the application maintainers will review the document to clarity their understanding of what the application does.
+Fourth, test planners will use this document to derive test plans and test cases.
+Finally, the project manager will use this document during project planning and monitoring.
+1.2 Scope of Product
+The purpose of this software development project is to create a new application called: Library Management System. The client for this project wishes
+to enter the PC-based LAN environment. The Library Management System will be PC-base with a LAN, allowing library users to search for books
+and library staff members to manage the book inventory and user database. The application will provide the following capabilities:
+The application will be access via a LAN on a PC terminal in the Library
+Library staff will be able to manage library user accounts including remove, change, and add.
+Library staff will be able to manage the book inventory database including remove, change, and add.
+The application will record all books that are checked out, checked in, and recalled.
+The application will generate reports for administrative purposes.
+The application will provide search function on books based on ISBN, subject, title, or author.
+The project's client has determined that this application will provide the following benefits:
+Provide additional flexibility and convenience to the library users.
+Provide better reliability and security of the library information.
+Provide a more productive environment for the library staff member.
+Reduce the cost of the library operations.
+1.3 Definitions, Acronyms, and Abbreviations
+SRS - Software Requirements Specification.
+PC - Personal Computer.
+LAN - Local Area Network.
+IEEE - Institute of Electrical and Electronics Engineers.
+ISBN - International Standardized Bin Number.
+1.4 References
+1. Merlin Dorfman, Richard H. Thayer, "Standards, Guidelines, and Examples on System and software Requirements Engineering", IEEE, 1990.
+1.5 Overview
+A brief description of the content of each chapter is given below.
+1.0 Introduction
+Provides an overview of the project. Summarizes the major capabilities of the product.
+2.0 General Description
+Presents the environment in which the application is expected to operate, provides an overview of the system requirements, describes
+assumptions about possible users of the application, possible constraints on the project, and the underlying assumptions that on which the
+requirements analysis is based.
+3.0 Specific Requirements
+The specification of requirements. Contains a complete description of the application's requirements, both functional and non-functional.
+2.0 General Description
+2.1 Product Perspective
+The Library Book System is used for Library Manager, Librarian, and Library User. The system is self-contained. However, it is possible to exchange
+data with other system through external interface if required. The following is a typical system diagram:
+2.2 Product Functions
+The high level summary of functions in Library Book System is described in the following concept map. Detail functional requirements will be
+described in section 3.
+2.3 User Characteristics
+The three types of user for the Library Book System are:
+Library Manager
+Librarian
+Library User
+The following table describe general users characteristics that will affect the functionality of the software product.
+Type of
+User
+User Characteristic
+User Technical
+Expertise
+How the user
+characteristic and
+technical expertise
+affect Library Book
+System functionality
+Library
+Manager
+Good understanding to
+library operation
+Responsible for library
+operation as a whole.
+Responsible for library
+staff managing
+Average in technical
+proficiency
+Used text type terminal
+in the old library book
+system
+User interface with less
+input steps.
+Easy to learn.
+Librarian
+Good understanding to
+library operation
+Responsible for library
+operation.
+Average in technical
+proficiency
+Used text type terminal
+in the old library book
+system
+User interface with less
+input steps.
+Easy to learn.
+(Diverse user
+characteristic)
+Younger generation
+tends to accept and
+learn new thing (i.e.
+computer system)
+easier than older
+generation Younger generation
+GUI interface may be
+easier to learn than text
+interface.
+Library User Older generation may
+like the new system be
+similar to the old one
+in terms of user
+interfaces and
+functionality. Will not have any
+formal training to use
+the system.
+has a lot of exposure to Windows type
+application
+Provide system help
+Provide appropriate
+error messages for
+invalid user inputs.
+2.4 General Constraints
+The current hardware for the existing Library Book System is mainframe with text type terminal. Therefore, if the new system is PC based, there will
+be a need to replace with PC hardware and new network facility.
+The Library Book System can potentially have hundreds of users. It is unrealistic to provide training for everyone. Therefore, the system should be
+designed for easy to use, providing help instructions, and appropriate error messages for invalid user inputs.
+Security is important to library operation. Library user is allowed to use the Library Book System only for searching book records. User should never
+be able to break into the system and to perform any modification.
+Reliability is vital to library operation. The Library Book System should not have any unscheduled down time during library operation hours. Any
+down time in operation hours has significant impact to the operation and cause inconvenience to everyone in library.
+2.5 Assumptions and Dependencies
+The following is a list of assumptions and dependencies that would affect the software requirements if they turned out to be false:
+Users have basic understanding to PC and Windows.
+There is a method to convert all book records and library user records from the existing system into the Library Book System.
+3.0 Specific Requirements:
+This section contains the detailed requirements. In this section, the users of "Search Book Record" are refereed to librarians and patrons (library
+users). Users of other sections are only refereed to the librarian card holder (librarians and library managers.)
+3.1 Functional Requirements
+3.1.1 User Interface
+The user interface requirements are concerned with the user interface and how information is presented to the user.
+3.1.1.1 Library user account manage system
+SRS-001: The system shall display the user account information including user ID, last and first name, and user position, privilege.
+SRS-002: The system shall use a graphic user interface which allows librarians to choice actions including removing, changing and adding user
+account and account information..
+3.1.1.2 Book borrowing system.
+SRS-003: When check out the books, the system shall show all the book borrowing information about a particular user including:
+the first and last name of the user
+the library card number
+the library card expiring date
+if the user has unpaid penalty
+the number of books the user has not return
+SRS-004: When check out the books, when required by librarians, the system shall show the information about books which is borrowed before and
+not returned yet including:
+the ISBN of the book
+the title of the book
+the borrowing and due date of the book
+the branch which the book is checked out
+SRS-005: When check out the books, the system shall display the information of the book which is just being checking out including: ISBN, title, due
+date.
+SRS-006: When check in the books, the system shall show the title, ISBN of the book which is being checked in. When check in is finished, a "check
+in" stamp shall be seen.
+3.1.1.3 Book recall system
+SRS-007: When recalling the book, the system shall display a list of all the copies of the book which is borrowed out ordered by book lend out time.
+SRS-008: When the recalled book is arrived, the system shall display the last and first name, the recall date and the arriving date of the book. If only
+one copy of book is arrived and more than one user are waiting, users shall be displayed ordered by recalling time. When check in recall book is
+finished, a "check in recall" stamp shall be seen.
+3.1.1.4 Search book record
+SRS-009: The system shall display a list of books which are match the search criteria sorted by book titles including:
+the category
+the ISBN
+the title
+the author
+SRS-008: When required by users, the system shall display the information about a particular book including:
+the category
+the title
+the ISBN
+the publisher
+the brief description of the book (if any stored in database)
+the location in library
+3.1.2 Data Entry
+The data entry requirements are concerned with how data is entered and validated.
+SRS-010: The system shall allow a user to enter his/her data via a keyboard or choose an item via a mouse.
+SRS-011: Whenever the "date" data is needed, it shall be entered only by choose date from a online calendar.
+SRS-012: The system shall allow the user to enter the library card number and ISBN both by typing or scanning.
+SRS-013: The system shall allow the user to enter book borrowing, recalling data as frequently as required.
+3.1.2.1 Library user account manage system
+SRS-014: The system shall allow the user to attach notes to each account
+SRS-015: The system shall allow the user to add or change information in an account including: last name, first name, user ID, user position, user
+privilege.
+SRS-016: the system shall allow the user to delete an entire account.
+3.1.2.2 Book borrowing system.
+SRS-017: The system shall allow the user to specify a checking out book using its ISBN.
+SRS-018: The system shall allow the user to specify a patron by the library card number.
+SRS-019: The system shall allow the user to specify a checking in book using its ISBN.
+SRS-020: The system shall allow the user to specify that a penalty is paid.
+SRS-021: The system shall check and show the number of books which are checked out and if the number is exceeded the limitation for patrons except
+for librarian card holders.
+SRS-022: The system shall check and show if the book can only be used in library
+SRS-023: The system shall let the librarian card holders to check out books which can only be used in library.
+SRS-024: The system shall commit the check in and check out data to the database as soon as the data is entered.
+3.1.2.3 Book recall system
+SRS-025: The system shall allow the user to specify a recalled book by book ISBN
+SRS-026: The system shall allow the user to choose one copy of book to recall from a list of copies which are borrowed out.
+SRS-027: The system shall allow the user to record the record notification send out date, the book arrive date, the pick-up notification send out date.
+3.1.2.4 Search book record
+SRS-028: The system shall allow the user typing in search criteria including book title, key word in title, ISBN, subject, category.
+SRS-029: The system shall allow the user choose language option which the searched book is used including English, Spanish and French.
+SRS-030: If the search result are a list of books, the system shall allow the user to choose any one of them to see the details.
+3.1.2.5 Update book database
+SRS-031: The system shall allow the user to add or change the record information including:
+the category
+the title
+the ISBN
+the publisher
+the brief description of the book
+the location in library
+the purchase date
+the price
+SRS-032: the system shall allow the user to put "delete" stamp for a existing book and specify the deleting reason.
+3.1.3 Report Generation
+the report generation requirements are concerned with the report generation capabilities of the Library system.
+SRS-034: The system shall have a report feature that will allow the user to generate a report showing the information of all the sign out book in a time
+period which is the search criteria input by user. The information includes the number of books, the time period and the information is grouped by
+book categories.
+SRS-035: The system shall have a report feature that will allow the user to generate a report showing the information about all the users who have
+overdue books and penalty.
+SRS-036: The system shall have a report feature that will allow the user to generate a report showing the information of a particular patron.
+SRS-037: The system shall have a report feature that will allow the user to generate a report showing the information of book purchase information in
+a period including the book titles, category, the author, the publisher, the price. It also shall give statistic data about the total number of books
+purchased, the money paid by category.
+SRS-038: The system shall be generate those reports to the display, a file or a printer which is linked to the system.
+3.2 Performance Requirements
+SRS-039: The check in and check out system shall respond to the user no more than 5 seconds. The search function shall respond to the user no more
+than 9 seconds.
+3.3 Design Constraints
+SRS-040: The system shall be installed in a windows-NT network.
+3.4 Security Requirements
+SRS-041: The account management system shall only be used by managers or users with defined privileges.
+SRS-042: The check-in, check-out and recall system shall only be used by users who have librarian ID.
+SRS-043: The Patron information report shall be generated by users who have librarian ID.
+SRS-044: The book sign out report or book purchase report shall only be generated by managers or users with defined privileges.
+SRS-045: Database update data shall be committed to the database only after the managers have approved.
+3.5 Reliability
+SRS-041: The system shall be recovered within 10 minutes if it is down.
+SRS-042: The system shall be recovered without intervention at user terminal if it is down.
+SRS-043: The system shall show appropriate messages at terminal when system is down.
+SRS-044: The system shall have 99% reliability during library operating hours.
+SRS-045: Scheduled down time after library operating hours shall not be more than 1 hour per day.
+SRS-046: The system shall generate error messages when the user attempts to enter invalid data.
+See also:
+Requirement Specification Document
+Last modified: Oct. 21, 97
